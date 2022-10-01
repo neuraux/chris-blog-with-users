@@ -72,7 +72,7 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
 
 
-# db.create_all()
+db.create_all()
 
 
 @login_manager.user_loader
