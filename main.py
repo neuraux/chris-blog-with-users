@@ -72,6 +72,7 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
 
 
+# creates db
 db.create_all()
 
 
